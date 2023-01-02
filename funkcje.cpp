@@ -4,19 +4,12 @@ using namespace std;
 
 float f_liniowa(float a, float b)
 {
-	if(a==0)
+	if(-b/a==0)
 	{
-		cout<<"Funkcja ta nie ma miejsca zerowego"<<endl;
+		return 0;
 	}
 	else
 	{
-		if(-b/a==0)
-		{
-			return 0;
-		}
-		else
-		{
-			return -b/a;
-		}
+		return -b/a;
 	}
 }
