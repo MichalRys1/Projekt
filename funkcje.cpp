@@ -6,7 +6,14 @@ float f_liniowa(float a, float b)
 {
 	if(a==0)
 	{
-		cout<<"Funkcja ta nie ma miejsca zerowego"<<endl;
+		if(b==0)
+		{
+			cout<<"Ta funkcja ma nieskonczenie wiele miejsc zerowych"<<endl;
+		}
+		else
+		{
+			cout<<"Ta funkcja nie ma miejsc zerowych"<<endl;
+		}
 	}
 	else
 	{
