@@ -1,5 +1,5 @@
 #include <iostream>
-#include "funkcje.hpp"
+
 using namespace std;
 
 float f_liniowa(float a, float b)
