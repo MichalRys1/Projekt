@@ -5,6 +5,7 @@ using namespace std;
 
 float delta , x1, x2;
 
+
 float f_liniowa(float a, float b)
 {
 	if(a==0)
@@ -72,7 +73,8 @@ void f_kwadratowa(float a,float b,float c)
 {
 	if(a==0)
 	{
-		cout<<"Nie mozna obliczyc!!!"<<endl;
+		cout<<"Funkcja ta jest funkcja liniowa"<<endl;
+		cout<<f_liniowa(b,c)<<endl;
 	}
 	else
 	{
