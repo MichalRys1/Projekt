@@ -60,6 +60,22 @@ int main(int argc, char** argv) {
 			break;
 		case 2:
 			cout<<"Funkcja kwadratowa"<<endl;
+			cout<<"Wybierz postac funkcji kwadratowej"<<endl;
+			cout<<"1 - ax^2+bx+c"<<endl;
+			cin>>d;
+			switch(d)
+			{
+				case 1:
+					cout<<"Podaj a do obliczenia funkcji liniowej"<<endl;
+					cin>>a;
+					cout<<"Podaj b do obliczenia funkcji liniowej"<<endl;
+					cin>>b;
+					cout<<"Podaj c do obliczenia funkcji liniowej"<<endl;
+					cin>>e;
+					f_kwadratowa(a,b,e);
+					break;
+			}
+		break;
 	}
 	
 	return 0;
