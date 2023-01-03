@@ -3,7 +3,7 @@
 
 using namespace std;
 
-float delta , x1, x2;
+float delta , x1, x2 ,tmp1,tmp2,tmp3;
 
 
 float f_liniowa(float a, float b)
@@ -95,4 +95,13 @@ void f_kwadratowa(float a,float b,float c)
 			cout<<"Funkcja ta ma dwa miejsca zerowe i wynosza one x1="<<x1<<" x2="<<x2<<endl;
 		}
 	}
+}
+
+void f_kwadratowa2(float a,float b,float c)
+{
+	tmp1=a;
+	tmp2=-2*a*b;
+	tmp3=(a*(b*b)+c);
+	
+	f_kwadratowa(tmp1,tmp2,tmp3);
 }

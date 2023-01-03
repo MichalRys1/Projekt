@@ -62,6 +62,7 @@ int main(int argc, char** argv) {
 			cout<<"Funkcja kwadratowa"<<endl;
 			cout<<"Wybierz postac funkcji kwadratowej"<<endl;
 			cout<<"1 - Ax^2+Bx+C=Y"<<endl;
+			cout<<"2 - Y=a(x-p)^2+q"<<endl;
 			cin>>d;
 			switch(d)
 			{
@@ -74,6 +75,14 @@ int main(int argc, char** argv) {
 					cin>>e;
 					f_kwadratowa(a,b,e);
 					break;
+				case 2:
+					cout<<"Podaj a do obliczenia funkcji kwadratowej"<<endl;
+					cin>>a;
+					cout<<"Podaj p do obliczenia funkcji kwadratowej"<<endl;
+					cin>>b;
+					cout<<"Podaj q do obliczenia funkcji kwadratowej"<<endl;
+					cin>>e;
+					f_kwadratowa2(a,b,e);
 			}
 		break;
 	}
